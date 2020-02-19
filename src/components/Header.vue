@@ -13,10 +13,45 @@
 
             <el-col :md="14" :xs="24" class="top-menu">
                 <ul class="navbar-nav">
-                    <li class="nav-item">Add a Property</li>
-                    <li class="nav-item">Become an Agent</li>
-                    <li class="nav-item">My Shortlist</li>
-                    <li class="nav-item" @click="openLoginPopup()">Log In</li>
+                    <li class="nav-item">
+                        <a>Add a Property</a>
+<!--                        <router-link-->
+<!--                                class="nav-link"-->
+<!--                                active-class="active"-->
+<!--                                exact-->
+<!--                                :to="{name: 'add-property'}">-->
+<!--                            Add a Property-->
+<!--                        </router-link>-->
+                    </li>
+                    <li class="nav-item">
+                        <a>Become an Agent</a>
+<!--                        <router-link-->
+<!--                                class="nav-link"-->
+<!--                                active-class="active"-->
+<!--                                exact-->
+<!--                                :to="{name: 'become-agent'}">-->
+<!--                            Become an Agent-->
+<!--                        </router-link>-->
+                    </li>
+                    <li class="nav-item">
+                        <a>My Shortlist</a>
+<!--                        <router-link-->
+<!--                                class="nav-link"-->
+<!--                                active-class="active"-->
+<!--                                exact-->
+<!--                                :to="{name: 'my-shortlist'}">-->
+<!--                            My Shortlist-->
+<!--                        </router-link>-->
+                    </li>
+                    <li class="nav-item">
+                        <router-link
+                            class="nav-link"
+                            active-class="active"
+                            exact
+                            :to="{name: 'login'}">
+                            Log In
+                        </router-link>
+                    </li>
                 </ul>
             </el-col>
         </el-row>
@@ -51,7 +86,7 @@
 </script>
 
 <style lang="scss" scoped>
-    $main-color: #006ed2;
+    @import "src/assets/scss/variable";
 
     .wrapper {
         padding: 10px 0;
@@ -79,7 +114,6 @@
 
             li {
                 float: left;
-                padding: 16px;
                 margin: 0 20px;
 
                 &:last-of-type {
@@ -92,13 +126,24 @@
                 position: relative;
                 cursor: pointer;
 
-                &:hover {
-                    outline: none;
-                    border-bottom: 2px solid $main-color;
+                a {
+                    display: block;
+                    padding: 16px;
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        outline: none;
+                        border-bottom: 2px solid $main-color;
+                    }
+
+                    &:focus-within {
+                        outline: none;
+                        border-bottom: 2px solid $main-color;
+                    }
                 }
 
-                &:focus-within {
-                    outline: none;
+                .active {
                     border-bottom: 2px solid $main-color;
                 }
             }

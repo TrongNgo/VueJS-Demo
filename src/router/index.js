@@ -15,9 +15,9 @@ const router = new Router({
             component: () => import('../views/Home'),
             children: [
                 {
-                    path: "",
-                    name: "home",
-                    component: () => import("/")
+                    path: "/login",
+                    name: "login",
+                    component: () => import("../views/Login")
                 }
             ]
         }

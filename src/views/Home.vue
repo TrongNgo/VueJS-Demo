@@ -1,5 +1,6 @@
 <template>
     <div class="content">
+        <router-view></router-view>
         <PropertyList></PropertyList>
     </div>
 </template>

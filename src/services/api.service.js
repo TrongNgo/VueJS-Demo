@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-
 import JwtService from './jwt.service';
+import config from "../helpers/config";
 
 const ApiService = {
     init() {
         Vue.use(VueAxios, axios);
-        Vue.axios.defaults.baseURL = `${process.env.VUE_APP_BASE_API_URL}`;
+        Vue.axios.defaults.baseURL = config.baseUrl;
     },
 
     setHeader() {
