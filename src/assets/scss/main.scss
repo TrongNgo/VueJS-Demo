@@ -1,4 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap');
+
 body {
   margin: 0;
+}
+
+*, ::after, ::before {
   box-sizing: border-box;
+}
+
+.font-icon-large {
+  display: inline-block;
+  width: 30px;
+  font-size: 1.4em;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.font-icon-small {
+  display: inline-block;
+  width: 20px;
+  font-size: 1.1em;
+  text-align: center;
+  margin-right: 5px;
 }

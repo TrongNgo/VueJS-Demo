@@ -13,13 +13,12 @@ const router = new Router({
             path: '',
             props: true,
             component: () => import('../views/Home'),
-            children: [
-                {
-                    path: "/login",
-                    name: "login",
-                    component: () => import("../views/Login")
-                }
-            ]
+        },
+        {
+            name: 'detail',
+            path: '/detail',
+            props: true,
+            component: () => import('../views/PropertiesDetail')
         }
     ]
 });

@@ -1,4 +1,31 @@
-$main-color: #006ed2;
+$main-color: #0087d9;
 
+
+$background-main-color: #fafafa;
 $background-white-color: #fff;
+
 $background-dark-color-40: rgba(0, 0, 0, .4);
+$background-black-color: #000;
+$background-header-detail: #ccc;
+
+$text-main-color: #777777;
+$text-secondary-color: #7b7b7b;
+
+$button-main-color: #0087d9;
+$button-main-color-hover: #03a0ff;
+
+$font-size-small: 1em;
+$font-size-content: 1.1em;
+$font-size-title: 1.3em;
+$font-size-large: 1.5em;
+
+$line-height-content: 1.5;
+$line-height-title: 1.3;
+
+$button-dark-color: #ccc;
+
+@mixin d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

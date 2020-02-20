@@ -4,7 +4,7 @@
             <el-header height="65px">
                 <Header></Header>
             </el-header>
-            <el-main>
+            <el-main style="padding: 0; overflow: hidden">
                 <router-view></router-view>
             </el-main>
             <el-footer>

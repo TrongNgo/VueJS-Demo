@@ -2,6 +2,7 @@ import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'element-ui/lib/theme-chalk/display.css';
+import locale from 'element-ui/lib/locale/lang/en'
 
 import App from './App.vue';
 import router from './router';
@@ -10,13 +11,11 @@ import ApiService from './services/api.service';
 
 import './assets/scss/main.scss';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/dist/css/swiper.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
 
 Vue.config.productionTip = false;
 
-Vue.use(ElementUI);
+Vue.use(ElementUI, { locale });
 
 ApiService.init();
 

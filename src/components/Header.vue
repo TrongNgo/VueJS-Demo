@@ -15,54 +15,38 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a>Add a Property</a>
-<!--                        <router-link-->
-<!--                                class="nav-link"-->
-<!--                                active-class="active"-->
-<!--                                exact-->
-<!--                                :to="{name: 'add-property'}">-->
-<!--                            Add a Property-->
-<!--                        </router-link>-->
                     </li>
                     <li class="nav-item">
                         <a>Become an Agent</a>
-<!--                        <router-link-->
-<!--                                class="nav-link"-->
-<!--                                active-class="active"-->
-<!--                                exact-->
-<!--                                :to="{name: 'become-agent'}">-->
-<!--                            Become an Agent-->
-<!--                        </router-link>-->
                     </li>
-                    <li class="nav-item">
-                        <a>My Shortlist</a>
-<!--                        <router-link-->
-<!--                                class="nav-link"-->
-<!--                                active-class="active"-->
-<!--                                exact-->
-<!--                                :to="{name: 'my-shortlist'}">-->
-<!--                            My Shortlist-->
-<!--                        </router-link>-->
+                    <li class="nav-item" @click="dialogShortList = true">
+                        <a :class="dialogShortList ? 'active' : ''">
+                            My Shortlist ({{ this.getBookingList.length }})
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <router-link
-                            class="nav-link"
-                            active-class="active"
-                            exact
-                            :to="{name: 'login'}">
-                            Log In
-                        </router-link>
+                    <li class="nav-item" @click="dialogLogin = true">
+                        <a :class="dialogLogin ? 'active' : ''">Login</a>
                     </li>
                 </ul>
             </el-col>
         </el-row>
+
+        <!-- Login -->
+        <Login :dialogLogin="dialogLogin" @close-dialog="closeLoginPopup"></Login>
+        <MyShortList :dialogShortList="dialogShortList" @close-shortList="closeShortList"></MyShortList>
     </div>
 </template>
 
 <script>
+    import {mapGetters} from 'vuex';
+    import Login from "./Login";
+    import MyShortList from "./Cart/MyShortList";
 
     export default {
         name: "Header",
         components: {
+            Login,
+            MyShortList
         },
         data() {
             return {
@@ -70,16 +54,27 @@
                     keyword: ''
                 },
 
-                onLoginPopup: false
+                dialogLogin: false,
+                dialogShortList: false,
+
+                shortList: 0
             }
+        },
+        computed: {
+            ...mapGetters(['getBookingList'])
+        },
+        mounted() {
         },
         methods: {
             onFilterChanged() {
                 console.log(this.searchData);
             },
 
-            openLoginPopup() {
-                this.onLoginPopup = true;
+            closeLoginPopup(value) {
+                this.dialogLogin = value;
+            },
+            closeShortList(value) {
+                this.dialogShortList = value;
             }
         }
     }
@@ -111,6 +106,7 @@
             float: right;
             list-style: none;
             margin: 0;
+            font-family: Josefin Sans;
 
             li {
                 float: left;
