@@ -1,0 +1,40 @@
+.el-tabs__item {
+    font-family: Josefin Sans;
+    font-size: 18px;
+    color: #6b6b6b;
+    text-decoration: none solid rgb(107, 107, 107);
+}
+
+.el-table thead {
+    font-family: Josefin Sans !important;
+    font-size: 18px;
+    color: #0091dc !important;
+    text-decoration: none solid rgb(0, 145, 220) !important;
+}
+.el-table__body{
+    border-radius: 5px;
+    background-color: #fff;
+    background-size: cover;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    color: #6b6b6b;
+   
+    text-decoration: none solid rgb(107, 107, 107);
+}
+
+// .el-tabs__nav {
+    // float: none;
+// }
+
+.el-tabs__nav-wrap::after {
+    background-color: transparent;
+}
+
+.el-tabs__nav-wrap {
+    background-color: #fff;
+    position: relative;
+}
+
+.el-tabs__active-bar {
+    float: none;
+}

@@ -1,0 +1,349 @@
+
+
+.search-area{
+    background-color: #fff;
+    padding-left: 14%;
+    margin-top: 30px;
+    padding-top: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+ 
+  .count-properties {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    color: #6b6b6b;
+    text-decoration: none solid rgb(107, 107, 107);
+    text-align: left;
+  }
+  
+  .title {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+    text-decoration: underline;
+    font-size: 22px;
+    color: #525252;
+  }
+  
+  .view-all {
+    font-family: Josefin Sans;
+    text-align: left;
+    padding: 0px 10px 20px 10px;
+    font-size: 20px;
+    color: #0091dc;
+    cursor: pointer;
+  }
+  
+  .property-excerpt-area {
+   height: 350px;
+   // border-radius: 7px;
+    background-color: #ffffff;
+    background-size: cover;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    text-align: left;
+    padding: 15px 10px 0px 15px;
+    font-size: 14px;
+    font-family: Josefin Sans;
+  
+  .new-line {
+      margin-bottom: 7px;
+  }
+  
+  .property-detail {
+      padding: 10px 0px 0px 10px;
+      height: 140px;
+      
+      .property-for {
+          color: #0091dc;
+          font-weight: 700;
+      }
+  
+      .time {
+          color: #9e9e9e;
+          font-weight: 400;
+      }
+  
+      .property-cost {
+          color: #0091dc;
+          font-weight: 700;
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+        color: #525252;
+      }
+  
+      .fearture-text,.fearture-text-bath{
+        width: 21px;
+        height: 19px;
+        font-family: Josefin Sans;
+        font-size: 18px;
+        color: #525252;
+        text-decoration: none solid rgb(82, 82, 82);
+        vertical-align: 10%;
+      }
+      .area-text{
+        width: 183px;
+        height: 19px;
+        font-family: Josefin Sans;
+        font-size: 18px;
+        color: #525252;
+        text-decoration: none solid rgb(82, 82, 82);
+        vertical-align: 20%;
+      }
+  }
+  
+  .property-area {
+    flex-grow: 1;
+    background-color: #ffffff;
+  
+  .property-img {
+    width: 95%;
+    height: 150px;
+    flex-shrink: 0;
+    //border-radius: 7px;
+    background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+  
+    img {
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      filter: drop-shadow(0px 1px 5px rgba(0,0,0,1));
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+  
+      &.selected  {
+        color: red;
+        
+      }
+    }
+  }
+  
+  
+  }
+  .property-name {
+    font-family: Josefin Sans;
+    font-size: 18px;
+    color: #525252;
+    text-decoration: none solid rgb(82, 82, 82);
+    font-weight: 700;
+  }
+  .location-text{
+    width: 278px;
+    height: 15px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9e9e9e;
+    text-decoration: none solid rgb(158, 158, 158);
+  }
+
+    
+  }
+  @media only screen and (max-width: 480px) {
+  body {
+  .property-detail {
+      height: 170px !important;
+  }
+  }
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 480px) {
+    .property-name {
+      font-size: 12px;
+    }
+  }
+
+  
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .search-area {
+        width: 100%;
+        padding-left: 0px;
+      padding-bottom: 20px;
+      }
+      .count-properties {
+        font-family: Josefin Sans;
+       
+        color: #6b6b6b;
+        text-decoration: none solid rgb(107, 107, 107);
+        text-align: left;
+        padding-left: 15px;
+      }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .search-area {
+        width: 100%;
+        padding-left: 5%;
+      padding-bottom: 20px;
+      }
+      .count-properties {
+        font-family: Josefin Sans;
+       
+        color: #6b6b6b;
+        text-decoration: none solid rgb(107, 107, 107);
+        text-align: left;
+        padding-left: 15px;
+      }
+}
+  
+  /* ----------- iPhone X ----------- */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+       
+        .search-area {
+            padding-left: 0px;
+            padding-bottom: 20px;
+        }
+
+        .count-properties {
+            font-family: Josefin Sans;
+            font-size: 20px;
+            color: #6b6b6b;
+            text-decoration: none solid rgb(107, 107, 107);
+            text-align: left;
+            padding-left: 10px;
+          }
+      .time {
+        font-size: 10px;
+      }
+      .property-detail {
+        .property-name {
+          font-size: 12px;
+        }
+        .property-for{
+          font-size: 12px;
+        }
+        .property-cost {
+          color: #0091dc;
+          font-weight: 700;
+          font-size: 12px;
+        }
+        svg {
+          width: 15px !important ;
+          height: 15px !important;
+        }
+        .fearture-text{
+            font-size: 12px !important ;
+        }
+        .fearture-text-bath{
+          font-size: 12px !important ;
+          vertical-align: -10% !important ;
+        }
+        .area {
+          img{
+            width: 15px !important ;
+            height: 15px !important;
+          }
+          .area-text {
+            font-size: 12px !important ;
+          }
+        }
+        .location-area {
+          img {
+            width: 12px !important ;
+            height: 12px !important;
+          }
+          .location-text{
+            font-size: 12px !important ;
+          }
+        }
+      }
+  }
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .search-area {
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .count-properties {
+        font-family: Josefin Sans;
+        font-size: 20px;
+        color: #6b6b6b;
+        text-decoration: none solid rgb(107, 107, 107);
+        text-align: left;
+        padding-left: 10px;
+      }
+  .time {
+    font-size: 10px;
+  }
+  .property-detail {
+    .property-name {
+      font-size: 12px;
+    }
+    .property-for{
+      font-size: 12px;
+    }
+    .property-cost {
+      color: #0091dc;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    svg {
+      width: 15px !important ;
+      height: 15px !important;
+    }
+    .fearture-text{
+        font-size: 12px !important ;
+    }
+    .fearture-text-bath{
+      font-size: 12px !important ;
+      vertical-align: -10% !important ;
+    }
+    .area {
+      img{
+        width: 15px !important ;
+        height: 15px !important;
+      }
+      .area-text {
+        font-size: 12px !important ;
+      }
+    }
+    .location-area {
+      img {
+        width: 12px !important ;
+        height: 12px !important;
+      }
+      .location-text{
+        font-size: 12px !important ;
+      }
+    }
+  }
+}
+  
+  
+  
+  
+  

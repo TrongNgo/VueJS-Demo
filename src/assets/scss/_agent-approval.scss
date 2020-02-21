@@ -1,0 +1,102 @@
+.head {
+  margin: 20px 0 20px 0;
+  .text {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    color: #48c5e8;
+    text-decoration: none solid rgb(255, 176, 66);
+    vertical-align: 10%;
+  }
+}
+.new-line {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.new-line2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.info-label {
+  //border: 1px solid red;
+  text-align: right;
+  margin-right: 5px;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  color: #48c5e8;
+  text-decoration: none solid rgb(107, 107, 107);
+  vertical-align: 10%;
+}
+.info-detail {
+  //border: 1px solid red;
+  text-align: left;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  color: #6b6b6b;
+  text-decoration: none solid rgb(107, 107, 107);
+  vertical-align: 10%;
+  margin-left: 10px;
+}
+.img-nationalid {
+  text-align: right;
+}
+.col-img {
+  margin-right: 10px;
+}
+.col-info {
+  text-align: left;
+}
+.status-wait {
+  color:orange;
+}
+.status-approve {
+  color: green;
+}
+.status-reject {
+  color: red;
+}
+
+.save-edit-form {
+      width: 20%;
+      height: 56px;
+      border-radius: 100px;
+      background-color: #00d7ed;
+      border-color: #00d7ed;
+      background-size: cover;
+    
+     
+      cursor: pointer;
+      text-align: center;
+      span {
+        width: 100%;
+        height: 23px;
+        font-family: Josefin Sans;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        text-decoration: none solid rgb(255, 255, 255);
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+.cancel-edit-form {
+      width: 20%;
+      height: 56px;
+      border-radius: 100px;
+      border-color: #ebebeb;
+      background-color: #ebebeb;
+      background-size: cover;
+      padding-top: 15px;
+      cursor: pointer;
+      text-align: center;
+      span {
+        width: 100%;
+        height: 23px;
+        font-family: Josefin Sans;
+        font-size: 14px;
+        color: #e8756f;
+        font-weight: 400;
+        text-decoration: none solid rgb(255, 255, 255);
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

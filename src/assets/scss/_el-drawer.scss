@@ -1,0 +1,10 @@
+.el-drawer__body{
+    overflow-y: scroll;
+    .demo-drawer__content {
+        height: 85%;
+    }
+    .demo-drawer__footer{
+        font-family: Josefin Sans;
+        padding-right:20px;
+    }
+}

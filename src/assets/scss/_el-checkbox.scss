@@ -1,0 +1,52 @@
+.el-checkbox-button__inner {
+    width: 152px;
+    height: 40px;
+    border-radius: 100px !important;
+    border-color: #dbfbff;
+    background-color: #dbfbff;
+    background-size: cover;
+    font-family: Josefin Sans;
+    font-size: 16px!important;
+    color: #3895ba;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+    text-decoration: none solid rgb(56, 149, 186);
+    padding: 13px !important; 
+
+    &:hover {
+      background-color: #d8f8fb;
+      color: #878787;
+    }
+  
+  
+  
+    &.is-checked {
+      background-color: #00d7ed;
+    }
+  }
+  .el-checkbox-button.is-checked:first-child .el-checkbox-button__inner{
+    border-color: #94f1fc;
+  }
+  .el-checkbox-button.is-checked .el-checkbox-button__inner {
+    width: 152px;
+    height: 40px;
+    border-radius: 100px !important;
+    border-color: #dbfbff;
+    background-color: #48c5e8;
+    background-size: cover;
+    font-family: Josefin Sans;
+    font-size: 16px!important;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+    text-decoration: none solid rgb(56, 149, 186);
+    padding: 13px !important; 
+   
+  
+  }
+  .el-checkbox-button--small .el-checkbox-button__inner{
+    padding: 7px 15px;
+  }
+  

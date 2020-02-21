@@ -1,0 +1,17 @@
+.map-area{
+        position: fixed;
+        top: 150;
+        right: 10;
+        z-index: 999;
+        /* Full sized */
+        width: 100%;
+        height: 100vh;
+    background-image: url("/images/map_moq.png");
+    img {
+        width: 100%;
+        height: auto;
+        
+    }
+   
+}
+

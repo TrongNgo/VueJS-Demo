@@ -1,0 +1,45 @@
+.filter-item>.el-button,.filter-mobile-item>.el-button,.filter-orther-item {
+    width: 102px;
+    border: 1px solid #c8c8c8;
+    border-radius: 100px;
+    background-color: #ffffff;
+    background-size: cover;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    color: #474747;
+    text-decoration: none solid rgb(71, 71, 71);
+    text-align: center;
+   
+}
+.filter-item>.el-button.selected,.filter-mobile-item>.el-button.selected,.filter-orther-item.selected {
+    width: 102px;
+    border: 1px solid #48c5e8;
+    border-radius: 100px;
+    background-color: #48c5e8;
+    background-size: cover;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+
+    
+}
+
+.demo-drawer__footer{
+    float: right;
+    padding-right: 40px;
+    .el-button{
+        font-family: Josefin Sans;
+        font-size: 16px;
+        color: #6b6b6b;
+        text-decoration: none solid rgb(107, 107, 107);
+        margin-left: 50px;
+    }
+    .btn-save{
+        font-family: Josefin Sans;
+        font-size: 16px;
+        color: #0091dc;
+        text-decoration: none solid rgb(0, 145, 220);
+    }
+}

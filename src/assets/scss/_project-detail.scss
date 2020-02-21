@@ -1,0 +1,427 @@
+@import'~bootstrap/dist/css/bootstrap.css';
+.new-line {
+    margin-top: 10px;
+}
+
+.top-text {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.price-title {
+    font-family: Josefin Sans;
+    color: #525252;
+    font-size: 16px;
+}
+
+.number {
+    font-family: Josefin Sans;
+    color: #0091dc;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.location-text{
+    font-family: Josefin Sans;
+    font-size: 15px;
+    color: #9e9e9e;
+    text-decoration: none solid rgb(158, 158, 158);
+}
+
+.header-type {
+    font-family: Josefin Sans;
+    color: #0091dc;
+    text-align: left !important;
+    font-size: 16px;
+}
+
+.data-ans {
+    font-family: Josefin Sans;
+    color: #6b6b6b;
+    text-align: left !important;
+    font-size: 16px;
+}
+
+.details-selected {
+    background-color: white;
+    border-color: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.text-header {
+    font-family: Josefin Sans;
+    font-size: 16px;
+    color: #0091dc;
+}
+
+.text-facilities {
+    font-family: Josefin Sans;
+    color: #6b6b6b;
+    font-size: 16px;
+}
+
+.header-price {
+    font-family: Josefin Sans;
+    color: #0091dc;
+    font-size: 16px;
+    text-align: center !important;
+}
+
+.text-table {
+    font-family: Josefin Sans;
+    color: #878787;
+    font-size: 16px;
+    text-align: center !important;
+}
+
+.img-floor {
+    padding-top: 30px;
+    min-height: auto;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    //object-fit: none; /* Do not scale the image */
+    //object-position: center; /* Center the image within the element */
+}
+
+.detail-header-image-small {
+    width: 50%;
+    height: 262px;
+    fill: #dadada;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.detail-body {
+    width: 1080px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-main-body {
+    // height: auto;
+    // max-height: 1300px;
+    background-color: #ffffff !important;
+}
+
+.detail-main-inner {
+    width: 1080px ;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.detail-main-tab {
+    width: 1080px ;
+    position: relative;
+    left: 3%;
+    padding-top: 20px;
+}
+
+.detail-inner {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.detail-inner1 {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+    width: 1080px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.btn-add-shortlisted{
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 50px;
+    padding: 1px 0px 0px;
+    border: 2px solid #0091dc;
+    border-radius: 100px;
+    background-color: #0091dc;
+    background-size: cover;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(0, 145, 220);
+    float: left;
+}
+
+.header-desc {
+    font-family: Josefin Sans;
+    color: #0091dc;
+    text-align: left !important;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.desc-data {
+    font-family: Josefin Sans;
+    color: #6b6b6b;
+    text-align: left !important;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.border-right-top {
+    border-right: black solid 1px;
+    padding-top: 35px;
+}
+
+.border-right-bottom {
+    border-right: black solid 1px;
+    padding-bottom: 45px;
+    padding-top: 10px;
+}
+
+.new-line-price {
+    margin-bottom: 10px;
+}
+
+.right-details {
+    padding-top: 40px;
+}
+
+/* Tabs*/
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    font-family: Josefin Sans;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#tabs{
+    font-family: Josefin Sans;
+    color: #0091dc;
+}
+#tabs h6.section-title{
+    font-family: Josefin Sans;
+    color: #0091dc;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    font-family: Josefin Sans;
+    color: #0091dc;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 2px solid !important;
+    font-size: 16px;
+}
+#tabs .nav-tabs .nav-link {
+    font-family: Josefin Sans;
+    // border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 16px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+a {
+    font-family: Josefin Sans;
+    color: #6b6b6b;
+}
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .detail-header{
+        display: none;
+    }
+    .detail-body {
+      
+        padding:15px;
+        .header-project{
+            font-family: Josefin Sans;
+            font-size: 14px;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+            text-align: center;
+        }
+        .project-name{
+            font-family: Josefin Sans;
+            font-size: 30px !important;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+        }
+
+        .location-text {
+        
+            font-family: Josefin Sans;
+            font-size: 16px !important;
+            color: #6b6b6b;
+            text-decoration: none solid rgb(107, 107, 107);
+            text-align: center;
+            word-wrap: break-word;
+        }
+    }
+    
+}
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .detail-header{
+        display: none;
+    }
+    .detail-body {
+      
+        padding:15px;
+        .header-project{
+            font-family: Josefin Sans;
+            font-size: 14px;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+            text-align: center;
+        }
+        .project-name{
+            font-family: Josefin Sans;
+            font-size: 30px !important;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+        }
+        .location-text {
+        
+            font-family: Josefin Sans;
+            font-size: 16px !important;
+            color: #6b6b6b;
+            text-decoration: none solid rgb(107, 107, 107);
+            text-align: center;
+            word-wrap: break-word;
+        }
+    }
+    
+}
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .detail-header{
+        display: none;
+    }
+    .detail-body {
+      
+        padding:15px;
+
+        .header-project{
+            font-family: Josefin Sans;
+            font-size: 14px;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+            text-align: center;
+        }
+        .project-name{
+            font-family: Josefin Sans;
+            font-size: 30px !important;;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+        }
+
+        .location-text {
+        
+            font-family: Josefin Sans;
+            font-size: 16px !important;
+            color: #6b6b6b;
+            text-decoration: none solid rgb(107, 107, 107);
+            text-align: center;
+            word-wrap: break-word;
+        }
+    }
+}
+ /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .detail-header{
+        display: none;
+    }
+    .detail-body {
+      
+        padding:15px;
+
+        .header-project{
+            font-family: Josefin Sans;
+            font-size: 14px;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+            text-align: center;
+        }
+        .project-name{
+            font-family: Josefin Sans;
+            font-size: 30px !important;
+            color: #0091dc;
+            text-decoration: none solid rgb(0, 145, 220);
+        }
+
+        .location-text {
+        
+            font-family: Josefin Sans;
+            font-size: 16px !important;
+            color: #6b6b6b;
+            text-decoration: none solid rgb(107, 107, 107);
+            text-align: center;
+            word-wrap: break-word;
+        }
+    }
+}
+
+
+.text{       
+    font-family: Josefin Sans;
+    font-size: 16px;
+    color: #6b6b6b;
+    text-decoration: none solid rgb(255, 176, 66);
+    vertical-align: 10%;
+    line-height: 2;
+}
+
+.slash {
+    position: absolute;
+    font-family: Josefin Sans;
+    text-align: center;
+    top: 45%;
+    right: 45%;
+    font-size: 40px;
+    color: #6b6b6b;
+    font-style: italic;
+}
+
+.max-score {
+    position: absolute;
+    font-family: Josefin Sans;
+    text-align: center;
+    top: 55%;
+    right: 20%;
+    font-size: 35px;
+    color: #6b6b6b;
+    font-style: italic;
+}

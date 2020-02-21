@@ -7,6 +7,9 @@ export const FETCH_PROPERTIES = "fetchProperties";
 export const SEARCH_PROPERTIES = "searchProperties";
 
 export const FETCH_PROPERTY_DETAIL = "fetchPropertyDetail";
+export const FETCH_SUMMARY_SCORE = "fetchSummaryScore";
+export const FETCH_PROPERTY_DETAIL_FOR_EDIT = "fetchPropertyDetailForEdit";
+
 
 export const GET_LIST_CART = "getListCart";
 export const ADD_TO_CART = "addToCart";

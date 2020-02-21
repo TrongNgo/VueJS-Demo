@@ -11,6 +11,9 @@ export const FETCH_START = "setLoading";
 export const FETCH_PROPERTY_DETAIL_START = "setPropertyLoading";
 export const FETCH_PROPERTY_DETAIL_END = "setPropertyDetail";
 
+export const FETCH_SUMMARY_SCORE_END = "setSummaryScore";
+export const FETCH_PROPERTY_DETAIL_FOR_EDIT_END = "setPropertyDetailForEdit";
+
 // CART
 export const ADD_CART_END = "addToCartEnd";
 export const REMOVE_CART_END = "removeFromCartEnd";

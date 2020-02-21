@@ -1,0 +1,1453 @@
+.properties-detail-area {
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    background-color: #FAFAFA;
+    .price-mobile-area{
+        display: none;
+    }
+    .detail-inner-area{
+        height: auto;
+        .detail-header{
+      
+            width: 100%;
+            height: auto;
+            .detail-header-image {
+                width: 50%;
+                height: 523px;
+                fill: #dadada;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .detail-header-image-small {
+                width: 50%;
+                height: 262px;
+                fill: #dadada;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                .view-photo-ara {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding-bottom: 5px;
+                    padding-right: 5px;
+    
+                    .el-button {
+                        font-family: Josefin Sans;
+                        font-size: 15px;
+                      border-color: #525252;
+                        text-decoration: none solid rgb(158, 158, 158);
+                    }
+                    
+                }
+            }
+        }
+
+        
+            .detail-body {
+            width: 1080px ;
+            height: auto;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-top: 5px;
+            .clear { clear: both; }
+
+            .note-area {
+                margin: 5px;
+             
+                width: 100%;
+                .note-inner {
+                   
+                    width: 97%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    background-size: cover;
+                    font-family: Josefin Sans;
+                    font-size: 16px;
+                    color: #6b6b6b;
+                    font-style: italic;
+                    text-decoration: none solid rgb(107, 107, 107);
+
+                    .note-date-inner{
+                        height: auto;
+                        padding:10px;
+                        display: flex;
+                        justify-content: flex-end;
+                        font-style:normal;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #7baab3;
+                        text-decoration: none solid rgb(123, 170, 179);
+                        text-align: right;
+                    }
+                }
+            }
+            .note-control-area {
+                display: flex;
+                width: 100%;
+                .left-area{
+                    .el-button {
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #0091dc;
+                        text-decoration: none solid rgb(0, 145, 220);
+                    }
+                    padding:10px;
+                    justify-content: flex-start;
+                    width: 50%;
+                }
+                .right-area{
+                    padding:10px;
+                   text-align: right;
+                    width: 50%;
+                    .el-button {
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #0091dc;
+                        text-decoration: none solid rgb(0, 145, 220);
+                    }
+                }
+            }
+            .history-control-area {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .left-area{
+                    padding:10px;
+                    justify-content: flex-start;
+                    width: 100%;
+                }
+                .right-area{
+                   padding:10px;
+                   text-align: right;
+                   width: 95%;
+                    .el-button {
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #0091dc;
+                        text-decoration: none solid rgb(0, 145, 220);
+                    }
+                }
+            }
+            
+            .homeowner-detail {
+                font-family: Josefin Sans;
+                font-size: 16px;
+                color: #7baab3;
+                text-decoration: none solid rgb(123, 170, 179);
+
+                .header-detail {
+                    height: 18px;
+                    font-family: Josefin Sans;
+                    font-size: 16px;
+                    color: #7baab3;
+                    text-decoration: none solid rgb(123, 170, 179);
+                    margin-right: 20px;
+                    margin-left: 20px;
+                }
+                .inner-detail {
+                    height: 32px;
+                    font-family: Josefin Sans;
+                    font-size: 16px;
+                    color: #6b6b6b;
+                    text-decoration: none solid rgb(107, 107, 107);
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    word-wrap: break-word;
+                }
+            }
+
+            .new-line {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+    
+            .detail-inner {
+               
+                .time-ago{
+               
+                    font-family: Josefin Sans;
+                    font-size: 15px;
+                    color: #9e9e9e;
+                    text-decoration: none solid rgb(158, 158, 158);
+                }
+                .properties-name {
+                   
+                    font-family: Josefin Sans;
+                    font-size: 29px;
+                    color: #6b6b6b;
+                    font-weight: 700;
+                    text-decoration: none solid rgb(107, 107, 107);
+                }
+                .location-text{
+                    font-family: Josefin Sans;
+                    font-size: 15px;
+                    color: #9e9e9e;
+                    text-decoration: none solid rgb(158, 158, 158);
+                }
+                .feature-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 23px;
+                        height: 24px;
+                        color: #6b6b6b;
+                        margin-right: 10px;
+                    }
+                    img{
+                        margin-right: 10px;
+                    }
+                    .text{
+                        width: 37px;
+                        height: 24px;
+                        font-family: Josefin Sans;
+                        font-size: 18px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                    .text-area {
+                        width: 37px;
+                        height: 24px;
+                        font-family: Josefin Sans;
+                        font-size: 18px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 15%;
+                    }
+                }
+                .feature-item2 {
+                    margin-top: 10px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 23px;
+                        height: 24px;
+                        color: #6b6b6b;
+                        margin-right: 10px;
+                    }
+                    .text{
+                        width: 37px;
+                        height: 24px;
+                        font-family: Josefin Sans;
+                        font-size: 18px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                }
+                .unique-feature-area {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  
+                    height: auto;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    background-size: cover;
+                    padding: 10px;
+                    .unique-feature-head{
+                       
+                        img {
+                            width: 26px;
+                            height: 26px;
+                            color: #ffb042;
+                            margin-right: 10px;
+                        }
+                        .text{
+                           
+                            font-family: Josefin Sans;
+                            font-size: 24px;
+                            color: #ffb042;
+                            text-decoration: none solid rgb(255, 176, 66);
+                            vertical-align: 10%;
+                        }
+                    }
+                    .feature-item {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        svg {
+                            width: 15px;
+                            height: 20px;
+                            color: #ffb042;
+                            margin-right: 10px;
+                        }
+                        
+                        .text{
+                            width: 219px;
+                            height: 23px;
+                            font-family: Josefin Sans;
+                            font-size: 16px;
+                            color: #6b6b6b;
+                            text-decoration: none solid rgb(107, 107, 107);
+                            vertical-align: 10%;
+                        }
+                       
+                    }
+                }
+
+                .score-feature-area {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    height: auto;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    background-size: cover;
+                    padding: 15px;
+
+                    .new-line {
+                        .view-details {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 130px;
+                            height: 40px;
+                            padding: 1px 0px 0px;
+                            border: 2px solid #48c5e8;
+                            border-radius: 100px;
+                            background-color: #ffffff;
+                            background-size: cover;
+                            font-family: 'Josefin Sans';
+                            font-size: 14px;
+                            color: #48c5e8;
+                            text-decoration: none solid rgb(0, 145, 220);
+                            text-align: center;
+                        }
+                    }
+
+                    .score-feature-head{
+                       
+                        img {
+                            width: 26px;
+                            height: 26px;
+                            color:#48c5e8;
+                            margin-right: 10px;
+                        }
+                        .text{
+                           
+                            font-family: Josefin Sans;
+                            font-size: 24px;
+                            color: #48c5e8;
+                            text-decoration: none solid rgb(255, 176, 66);
+                            vertical-align: 10%;
+                        }
+                    }
+                    .feature-item {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        svg {
+                            width: 15px;
+                            height: 20px;
+                            color: #ffb042;
+                            margin-right: 10px;
+                        }
+                        
+                        .text{
+                            width: 219px;
+                            height: 23px;
+                            font-family: Josefin Sans;
+                            font-size: 16px;
+                            color: #6b6b6b;
+                            text-decoration: none solid rgb(107, 107, 107);
+                            vertical-align: 10%;
+                        }
+                       
+                    }
+                }
+    
+                .properties-feature-area {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                   
+                    height: auto;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    background-size: cover;
+                    padding: 10px;
+                    .properties-feature-head{
+                       
+                        img {
+                            width: 26px;
+                            height: 26px;
+                            margin-right: 10px;
+                        }
+                        .text{
+                           
+                            width: 196px;
+                            height: 35px;
+                            font-family: Josefin Sans;
+                            font-size: 24px;
+                            color: #0091dc;
+                            text-decoration: none solid rgb(0, 145, 220);
+                            vertical-align: 10%;
+                        }
+                    }
+                    .feature-item {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        svg {
+                            width: 15px;
+                            height: 20px;
+                            color: #0091dc;
+                            margin-right: 10px;
+                        }
+                        
+                        .text{
+                            width: 219px;
+                            height: 23px;
+                            font-family: Josefin Sans;
+                            font-size: 16px;
+                            color: #6b6b6b;
+                            text-decoration: none solid rgb(107, 107, 107);
+                            vertical-align: 10%;
+                        }
+                       
+                    }
+                }
+                
+                .facilities-feature-area {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    height: auto;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    background-size: cover;
+                    padding: 10px;
+                    .facilities-feature-head{
+                       
+                        img {
+                            width: 26px;
+                            height: 26px;
+                            margin-right: 10px;
+                        }
+                        .text{
+                            width: 196px;
+                            height: 35px;
+                            font-family: Josefin Sans;
+                            font-size: 24px;
+                            color: #525252;
+                            text-decoration: none solid rgb(82, 82, 82);
+                            vertical-align: 10%;
+                        }
+                    }
+                    .facilities-item {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        svg {
+                            width: 15px;
+                            height: 20px;
+                            color: #6b6b6b;
+                            margin-right: 10px;
+                        }
+                        
+                        .text{
+                            width: 219px;
+                            height: 23px;
+                            font-family: Josefin Sans;
+                            font-size: 16px;
+                            color: #6b6b6b;
+                            text-decoration: none solid rgb(107, 107, 107);
+                            vertical-align: 10%;
+                        }
+                       
+                    }
+                }
+            }
+
+            .neigbour-head {
+                padding: 30px 15px 15px 15px;
+
+                .text {
+                    width: 196px;
+                    height: 35px;
+                    font-family: Josefin Sans;
+                    font-size: 24px;
+                    color: #525252;
+                    text-decoration: none solid rgb(82, 82, 82);
+                    vertical-align: 10%;
+                }
+            }
+
+            .property__head-actions {
+                display: flex;
+                justify-content: center;
+                .publishText {
+                    font-family: Josefin Sans;
+                    padding-left: 5px;
+                    padding-right: 10px;
+                    color: #6b6b6b;
+                    font-size: 18px;
+                }
+            }
+           
+           .price-area {
+                margin-top: 15px;
+                margin-left: 15%;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-bottom: 20px;
+                width: 330px;
+                height: auto;
+                border-top-width: 2px;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                border-top-style: solid;
+                border-color: #0091dc;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background-color: #fff;
+                background-size: cover;
+                box-shadow: 0px 41px 58px rgba(0,0,0,0.12);
+                .text{
+                    width: 50%;
+                    height: 17px;
+                    font-family: Josefin Sans;
+                    font-size: 15px;
+                    color: #6b6b6b;
+                    text-decoration: none solid rgb(107, 107, 107);
+                }
+                .price-title {
+                    width: 139px;
+                    height: 17px;
+                    font-family: Josefin Sans;
+                    font-size: 15px;
+                    color: #6b6b6b;
+                    text-decoration: none solid rgb(107, 107, 107);
+                   // margin-bottom: 10px;
+                }
+                .price-text {
+                    width: 139px;
+                    height: 30px;
+                    font-family: Josefin Sans;
+                    font-size: 20px;
+                    color: #0091dc;
+                    text-decoration: none solid rgb(0, 145, 220);
+                }
+                .btn-edit {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
+                    width: 280px;
+                    height: 60px;
+                    padding: 1px 0px 0px;
+                    border: 2px solid #0091dc;
+                    border-radius: 100px;
+                    background-color: #0091dc;
+                    background-size: cover;
+                    font-family: 'Josefin Sans';
+                    font-size: 18px;
+                    color: #ffffff;
+                    text-decoration: none solid rgb(0, 145, 220);
+                    text-align: center;
+                }
+               .btn-add-shortlisted{
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
+                    width: 280px;
+                    height: 60px;
+                    padding: 1px 0px 0px;
+                    border: 2px solid #0091dc;
+                    border-radius: 100px;
+                    background-color: #ffffff;
+                    background-size: cover;
+                    font-family: 'Josefin Sans';
+                    font-size: 18px;
+                    color: #0091dc;
+                    font-weight: 600;
+                    text-decoration: none solid rgb(0, 145, 220);
+                    text-align: center;
+               }
+               .btn-add-shortlisted-selected{
+                    background-color: #0091dc ;
+                    color: #ffffff;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
+                    width: 280px;
+                    height: 60px;
+                    padding: 1px 0px 0px;
+                    border: 2px solid #0091dc;
+                    border-radius: 100px;
+                    background-size: cover;
+                    font-family: 'Josefin Sans';
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-decoration: none solid rgb(0, 145, 220);
+                    text-align: center;
+               }
+           }
+           .build-area {
+               margin-top:20px;
+               margin-left: 15%;
+                height: 27px;
+                font-family: Josefin Sans;
+                font-size: 16px;
+                color: #969696;
+                text-decoration: none solid rgb(150, 150, 150);
+    
+                .build-head-area {
+                    .build-head-area-right {
+                        float: right;
+    
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                            margin: 10px;
+                            color:rgb(107, 107, 107);
+                        }
+                    }
+                    
+                }
+                .right {
+                    float: right;
+                }
+                .topic-text {
+                    width: 219px;
+                    height: 27px;
+                    font-family: Josefin Sans;
+                    font-size: 16px;
+                    color: #969696;
+                    text-decoration: none solid rgb(150, 150, 150);
+                }
+                .data-text{
+                    height: 25px;
+                    font-family: Josefin Sans;
+                    font-size: 16px;
+                    color: #6b6b6b;
+                    text-decoration: none solid rgb(107, 107, 107);
+                }
+                
+           }
+           .link{
+            width: 96px;
+            height: 25px;
+            font-family: Josefin Sans;
+            font-size: 16px;
+            color: #0091dc;
+            text-decoration: underline solid rgb(0, 145, 220);
+            cursor: pointer;
+        }
+        }
+    }
+    
+
+
+    .price-mobile-area {
+        margin-top: 15px;
+         width: 100%;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-color: #0091dc;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-color: #fff;
+            background-size: cover;
+            box-shadow: 0px 41px 58px rgba(0,0,0,0.12);
+            position: fixed;
+            z-index: 9;
+            bottom: 0px;
+            .text{
+                width: 50%;
+                height: 17px;
+                font-family: Josefin Sans;
+                font-size: 15px;
+                color: #6b6b6b;
+                text-decoration: none solid rgb(107, 107, 107);
+            }
+            .price-title {
+               
+                font-family: Josefin Sans;
+                font-size: 15px;
+                color: #6b6b6b;
+                text-decoration: none solid rgb(107, 107, 107);
+                margin-bottom: 10px;
+            }
+            .price-text {
+               
+                font-family: Josefin Sans;
+                font-size: 14px ;
+                color: #0091dc;
+                text-decoration: none solid rgb(0, 145, 220);
+            }
+           .btn-add-shortlisted{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                width: 130px;
+                height: 40px;
+                padding: 1px 0px 0px;
+                border: 2px solid #0091dc;
+                border-radius: 100px;
+                background-color: #ffffff;
+                background-size: cover;
+                font-family: 'Josefin Sans';
+                font-size: 14px;
+                color: #0091dc;
+                font-weight: 600;
+                text-decoration: none solid rgb(0, 145, 220);
+                text-align: center;
+               
+           }
+           .btn-add-shortlisted-selected{
+            background-color: #0091dc;
+            color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            width: 130px;
+            height: 40px;
+            padding: 1px 0px 0px;
+            border: 2px solid #0091dc;
+            border-radius: 100px;
+            background-size: cover;
+            font-family: 'Josefin Sans';
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none solid rgb(0, 145, 220);
+            text-align: center;
+           }
+       
+    }
+}
+
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .detail-header-slide{
+        display: none;
+    }
+    .detail-body {
+        width: 644px!important;
+        height: auto;
+      
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-top: 20px;
+        position: relative;
+    }
+    .price-mobile-area {
+        display: block !important;
+    }
+    .detail-inner-area {
+        width: 100% !important;
+        // height: 400px !important;
+         .detail-inner {
+             padding: 10px;
+             .time-ago{
+         
+                 font-family: Josefin Sans;
+                 font-size: 15px;
+                 color: #9e9e9e;
+                 text-decoration: none solid rgb(158, 158, 158);
+             }
+             .properties-name {
+             
+                 font-size: 29px !important ;
+             
+             }
+             .location-text{
+                 font-family: Josefin Sans;
+                 font-size: 15px;
+                 color: #9e9e9e;
+                 text-decoration: none solid rgb(158, 158, 158);
+             }
+ 
+             .feature-item2 {
+                 margin-top: 10px;
+                 margin-left: 5px;
+                 margin-right: 5px;
+                 svg {
+                     width: 23px;
+                     height: 24px;
+                     color: #6b6b6b;
+                     margin-right: 10px;
+                 }
+                 .text{
+                     width: 37px;
+                     height: 24px;
+                     font-family: Josefin Sans;
+                     font-size: 18px !important;
+                     color: #6b6b6b;
+                     text-decoration: none solid rgb(107, 107, 107);
+                     vertical-align: 10%;
+                 }
+             }
+             .unique-feature-area {
+                margin-top: 100px;
+                margin-bottom: 10px;
+              
+                height: auto;
+                border-radius: 5px;
+                background-color: #ffffff;
+                background-size: cover;
+                padding: 10px;
+                .unique-feature-head{
+                   
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        color: #ffb042;
+                        margin-right: 10px;
+                    }
+                    .text{
+                       
+                        font-family: Josefin Sans;
+                        font-size: 24px;
+                        color: #ffb042;
+                        text-decoration: none solid rgb(255, 176, 66);
+                        vertical-align: 10%;
+                    }
+                }
+                .feature-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 15px;
+                        height: 20px;
+                        color: #ffb042;
+                        margin-right: 10px;
+                    }
+                    
+                    .text{
+                        width: 219px;
+                        height: 23px;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                   
+                }
+            }
+
+            .properties-feature-area {
+                margin-top: 10px;
+                margin-bottom: 10px;
+               
+                height: auto;
+                border-radius: 5px;
+                background-color: #ffffff;
+                background-size: cover;
+                padding: 10px;
+                .properties-feature-head{
+                   
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        margin-right: 10px;
+                    }
+                    .text{
+                       
+                        width: 196px;
+                        height: 35px;
+                        font-family: Josefin Sans;
+                        font-size: 24px;
+                        color: #0091dc;
+                        text-decoration: none solid rgb(0, 145, 220);
+                        vertical-align: 10%;
+                    }
+                }
+                .feature-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 15px;
+                        height: 20px;
+                        color: #0091dc;
+                        margin-right: 10px;
+                    }
+                    
+                    .text{
+                        width: 219px;
+                        height: 23px;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                   
+                }
+            }
+            
+            
+            .facilities-feature-area {
+                margin-top: 10px;
+                margin-bottom: 10px;
+               
+                height: auto;
+                border-radius: 5px;
+                background-color: #ffffff;
+                background-size: cover;
+                padding: 10px;
+                .facilities-feature-head{
+                   
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        margin-right: 10px;
+                    }
+                    .text{
+                       
+                        width: 196px;
+                        height: 35px;
+                        font-family: Josefin Sans;
+                        font-size: 24px;
+                        color: #525252;
+                        text-decoration: none solid rgb(82, 82, 82);
+                        vertical-align: 10%;
+                    }
+                }
+                .facilities-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 15px;
+                        height: 20px;
+                        color: #6b6b6b;
+                        margin-right: 10px;
+                    }
+                    
+                    .text{
+                        width: 219px;
+                        height: 23px;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                   
+                }
+            }
+         }
+     }
+     
+    .price-mobile-area {
+       background-color: #fff;
+            .text{
+               
+               
+                font-size: 18px;
+               
+            }
+            .price-title {
+               
+                font-size: 18px !important;
+               
+            }
+            .price-text {
+               
+                font-size: 20px !important;
+            }
+           .btn-add-shortlisted{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                width: 180px !important;
+                height: 50px !important;
+                padding: 1px 0px 0px;
+                border: 2px solid #0091dc;
+                border-radius: 100px;
+                background-color: #ffffff;
+                background-size: cover;
+                font-family: 'Josefin Sans';
+                font-size: 18px !important;
+                color: #0091dc;
+                font-weight: 600;
+                text-decoration: none solid rgb(0, 145, 220);
+                text-align: center;
+
+           }
+           .btn-add-shortlisted-selected{
+                background-color: #0091dc;
+                color: #fff;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                width: 180px !important;
+                height: 50px !important;
+                padding: 1px 0px 0px;
+                border: 2px solid #0091dc;
+                border-radius: 100px;
+                background-size: cover;
+                font-family: 'Josefin Sans';
+                font-size: 18px !important;
+                font-weight: 600;
+                text-decoration: none solid rgb(0, 145, 220);
+                text-align: center;
+           }
+       
+    }
+}
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .detail-header-slide{
+        display: none;
+    }
+    .detail-body {
+        width: 900px!important;
+        height: auto;
+      
+        text-align: left;
+        padding-top: 20px;
+        position: relative;
+    }
+    .price-mobile-area {
+        display: block !important;
+    }
+    .detail-inner-area {
+        width: 100% !important;
+        // height: 400px !important;
+         .detail-inner {
+             padding: 10px;
+             .time-ago{
+         
+                 font-family: Josefin Sans;
+                 font-size: 15px;
+                 color: #9e9e9e;
+                 text-decoration: none solid rgb(158, 158, 158);
+             }
+             .properties-name {
+             
+                 font-size: 29px !important ;
+             
+             }
+             .location-text{
+                 font-family: Josefin Sans;
+                 font-size: 15px;
+                 color: #9e9e9e;
+                 text-decoration: none solid rgb(158, 158, 158);
+             }
+ 
+             .feature-item2 {
+                 margin-top: 10px;
+                 margin-left: 5px;
+                 margin-right: 5px;
+                 svg {
+                     width: 23px;
+                     height: 24px;
+                     color: #6b6b6b;
+                     margin-right: 10px;
+                 }
+                 .text{
+                     width: 37px;
+                     height: 24px;
+                     font-family: Josefin Sans;
+                     font-size: 18px !important;
+                     color: #6b6b6b;
+                     text-decoration: none solid rgb(107, 107, 107);
+                     vertical-align: 10%;
+                 }
+             }
+             .unique-feature-area {
+                margin-top: 100px;
+                margin-bottom: 10px;
+              
+                height: auto;
+                border-radius: 5px;
+                background-color: #ffffff;
+                background-size: cover;
+                padding: 10px;
+                .unique-feature-head{
+                   
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        color: #ffb042;
+                        margin-right: 10px;
+                    }
+                    .text{
+                       
+                        font-family: Josefin Sans;
+                        font-size: 24px;
+                        color: #ffb042;
+                        text-decoration: none solid rgb(255, 176, 66);
+                        vertical-align: 10%;
+                    }
+                }
+                .feature-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 15px;
+                        height: 20px;
+                        color: #ffb042;
+                        margin-right: 10px;
+                    }
+                    
+                    .text{
+                        width: 219px;
+                        height: 23px;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                   
+                }
+            }
+
+            .properties-feature-area {
+                margin-top: 10px;
+                margin-bottom: 10px;
+               
+                height: auto;
+                border-radius: 5px;
+                background-color: #ffffff;
+                background-size: cover;
+                padding: 10px;
+                .properties-feature-head{
+                   
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        margin-right: 10px;
+                    }
+                    .text{
+                       
+                        width: 196px;
+                        height: 35px;
+                        font-family: Josefin Sans;
+                        font-size: 24px;
+                        color: #0091dc;
+                        text-decoration: none solid rgb(0, 145, 220);
+                        vertical-align: 10%;
+                    }
+                }
+                .feature-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 15px;
+                        height: 20px;
+                        color: #0091dc;
+                        margin-right: 10px;
+                    }
+                    
+                    .text{
+                        width: 219px;
+                        height: 23px;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                   
+                }
+            }
+            
+            
+            .facilities-feature-area {
+                margin-top: 10px;
+                margin-bottom: 10px;
+               
+                height: auto;
+                border-radius: 5px;
+                background-color: #ffffff;
+                background-size: cover;
+                padding: 10px;
+                .facilities-feature-head{
+                   
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        margin-right: 10px;
+                    }
+                    .text{
+                       
+                        width: 196px;
+                        height: 35px;
+                        font-family: Josefin Sans;
+                        font-size: 24px;
+                        color: #525252;
+                        text-decoration: none solid rgb(82, 82, 82);
+                        vertical-align: 10%;
+                    }
+                }
+                .facilities-item {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    svg {
+                        width: 15px;
+                        height: 20px;
+                        color: #6b6b6b;
+                        margin-right: 10px;
+                    }
+                    
+                    .text{
+                        width: 219px;
+                        height: 23px;
+                        font-family: Josefin Sans;
+                        font-size: 16px;
+                        color: #6b6b6b;
+                        text-decoration: none solid rgb(107, 107, 107);
+                        vertical-align: 10%;
+                    }
+                   
+                }
+            }
+         }
+     }
+     
+    .price-mobile-area {
+       
+            .text{
+               
+               
+                font-size: 18px;
+               
+            }
+            .price-title {
+               
+                font-size: 18px !important;
+               
+            }
+            .price-text {
+               
+                font-size: 20px !important;
+            }
+           
+           .btn-add-shortlisted{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                width: 180px !important;
+                height: 55px !important;
+                padding: 1px 0px 0px;
+                border: 2px solid #0091dc;
+                border-radius: 100px;
+                background-color: #ffffff;
+                background-size: cover;
+                font-family: 'Josefin Sans';
+                font-size: 16px !important;
+                color: #0091dc;
+                font-weight: 600;
+                text-decoration: none solid rgb(0, 145, 220);
+                text-align: center;
+
+           }
+           .btn-add-shortlisted-selected{
+                background-color: #0091dc;
+                color: #fff;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+                width: 180px !important;
+                height: 55px !important;
+                padding: 1px 0px 0px;
+                border: 2px solid #0091dc;
+                border-radius: 100px;
+                background-size: cover;
+                font-family: 'Josefin Sans';
+                font-size: 16px !important;
+                font-weight: 600;
+                text-decoration: none solid rgb(0, 145, 220);
+                text-align: center;
+           }
+       
+    }
+}
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .detail-body{
+        width: 100%!important;
+        position: relative;
+    }
+    .price-mobile-area {
+        display: block !important;
+    }
+    .detail-header{
+        display: none;
+        .detail-header-image {
+            width: 473px !important;
+            height: 262px !important;
+          
+        }
+        .detail-header-image-small {
+           display: none;
+        }
+    }
+    .detail-header-slide{
+        display: block;
+    }
+    .detail-inner-area {
+       width: 100% !important;
+       // height: 600px !important;
+        .detail-inner {
+            padding: 10px;
+            .time-ago{
+        
+                font-family: Josefin Sans;
+                font-size: 15px;
+                color: #9e9e9e;
+                text-decoration: none solid rgb(158, 158, 158);
+            }
+            .properties-name {
+            
+                font-size: 18px !important ;
+            
+            }
+            .location-text{
+                font-family: Josefin Sans;
+                font-size: 15px;
+                color: #9e9e9e;
+                text-decoration: none solid rgb(158, 158, 158);
+            }
+
+            .feature-item2 {
+                margin-top: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    color: #6b6b6b;
+                    margin-right: 10px;
+                }
+                .text{
+                    width: 37px;
+                    height: 24px;
+                    font-family: Josefin Sans;
+                    font-size: 12px !important;
+                    color: #6b6b6b;
+                    text-decoration: none solid rgb(107, 107, 107);
+                    vertical-align: 10%;
+                }
+            }
+        }
+    }
+}
+ /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    .detail-body{
+        width: 100%!important;
+        position: relative;
+    }
+    .price-mobile-area {
+        display: block !important;
+    }
+    .detail-header{
+        display: none;
+        .detail-header-image {
+            width: 473px !important;
+            height: 262px !important;
+          
+        }
+        .detail-header-image-small {
+           display: none;
+        }
+    }
+    .detail-header-slide{
+        display: block;
+    }
+    .detail-inner-area {
+       width: 100% !important;
+      //  height: 600px !important;
+        .detail-inner {
+            padding: 10px;
+            .time-ago{
+        
+                font-family: Josefin Sans;
+                font-size: 15px;
+                color: #9e9e9e;
+                text-decoration: none solid rgb(158, 158, 158);
+            }
+            .properties-name {
+            
+                font-size: 18px !important ;
+            
+            }
+            .location-text{
+                font-family: Josefin Sans;
+                font-size: 15px;
+                color: #9e9e9e;
+                text-decoration: none solid rgb(158, 158, 158);
+            }
+
+            .feature-item2 {
+                margin-top: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    color: #6b6b6b;
+                    margin-right: 10px;
+                }
+                .text{
+                    width: 37px;
+                    height: 24px;
+                    font-family: Josefin Sans;
+                    font-size: 12px !important;
+                    color: #6b6b6b;
+                    text-decoration: none solid rgb(107, 107, 107);
+                    vertical-align: 10%;
+                }
+            }
+        }
+    }
+}
+
+
+.text{       
+    font-family: Josefin Sans;
+    font-size: 16px;
+    color: #6b6b6b;
+    text-decoration: none solid rgb(255, 176, 66);
+    vertical-align: 10%;
+    line-height: 2;
+}
+
+.slash {
+    position: absolute;
+    font-family: Josefin Sans;
+    text-align: center;
+    top: 45%;
+    right: 45%;
+    font-size: 40px;
+    color: #6b6b6b;
+    font-style: italic;
+}
+
+.max-score {
+    position: absolute;
+    font-family: Josefin Sans;
+    text-align: center;
+    top: 55%;
+    right: 20%;
+    font-size: 35px;
+    color: #6b6b6b;
+    font-style: italic;
+}

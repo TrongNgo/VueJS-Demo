@@ -27,16 +27,30 @@
                                     <span>$ 12k/month</span>
                                 </el-col>
                             </el-row>
+
                             <el-row>
-                                <el-button v-if="!isBooked" round @click="addShortList()"
-                                           class="btn-add-shortlisted btn-add">
-                                    <span>Add to ShortList</span>
-                                </el-button>
-                                <el-button v-else round @click="removeShortList()"
-                                           class='btn-add-shortlisted-selected btn-add'>
-                                    <span v-if="isBooked" class="btn-add-icon"><i class="el-icon-check"></i></span>
-                                    <span>Added to ShortList</span>
-                                </el-button>
+                                <el-col>
+                                    <!-- TODO: Edit button For only Staff  -->
+                                    <el-button round
+                                               class="btn-edit"
+                                               @click="dialogVisible = true">
+                                        <span><font-awesome-icon icon="edit" /></span>
+                                        <span>Edit</span>
+                                    </el-button>
+                                </el-col>
+                            </el-row>
+                            <el-row>
+                                <el-col>
+                                    <el-button v-if="!isBooked" round @click="addShortList()"
+                                               class="btn-add-shortlisted btn-add">
+                                        <span>Add to ShortList</span>
+                                    </el-button>
+                                    <el-button v-else round @click="removeShortList()"
+                                               class='btn-add-shortlisted-selected btn-add'>
+                                        <span v-if="isBooked" class="btn-add-icon"><i class="el-icon-check"></i></span>
+                                        <span>Added to ShortList</span>
+                                    </el-button>
+                                </el-col>
                             </el-row>
                         </div>
                     </el-col>
@@ -138,9 +152,13 @@
                                                 <el-col :span="7" class="header-detail">
                                                     {{ homeOwnerDetail.email }}
                                                 </el-col>
+
+                                                <!--  go to home  -->
                                                 <el-col :span="7" class="header-detail">
                                                     {{ homeOwnerDetail.numberOfProperties }}
-                                                    <span class="link" @click="goToHomeOwnerProp()"></span>
+                                                    <span class="link" @click="goToHomeOwnerProp()">
+                                                        View
+                                                    </span>
                                                 </el-col>
                                             </el-row>
 
@@ -219,10 +237,91 @@
                                 </el-tabs>
                             </el-col>
                         </el-row>
-                    </el-col>
 
+
+                <!--     Staff - Feedback      v-if="getMemberId == details.listingOwnerId || getRole == 'Staff'"             -->
+                        <el-row class="score-feature-area" style="margin-top: 20px;">
+                            <div v-if="feedbackSum.summaryList && feedbackSum.summaryList.length !== 0">
+                                <el-col :md="15">
+                                    <div>
+                                        <el-row class="new-line">
+                                            <el-col :md="24" :sm="12">
+                                                <div class="score-feature-head">
+                                                    <span class="text">Property Score</span>
+                                                </div>
+                                            </el-col>
+
+                                            <el-col :md="24" :sm="12" v-for="(item,index) in feedbackSum.summaryList" :key="index">
+                                                <el-row>
+                                                    <el-col :md="18">
+                                                        <span class="text">{{item.question}}</span>
+                                                    </el-col>
+                                                    <!-- Binding Custom Color  -->
+                                                    <el-col :md="6">
+                                                        <div v-bind:style="renderColorItem(item.score,1)"></div>
+                                                        <div v-bind:style="renderColorItem(item.score,2)"></div>
+                                                        <div v-bind:style="renderColorItem(item.score,3)"></div>
+                                                        <div v-bind:style="renderColorItem(item.score,4)"></div>
+                                                        <div v-bind:style="renderColorItem(item.score,5)"></div>
+                                                    </el-col>
+                                                </el-row>
+                                            </el-col>
+
+                                            <!-- Open Dialog   -->
+                                            <el-col style="margin-top: 20px;">
+                                                <el-button round
+                                                           class="view-details"
+                                                           :ListingName="details.listingName"
+                                                           :feedbackSum="feedbackSum"
+                                                           @click="dialogFeedBack = true">
+                                                    <span>View Details</span>
+                                                </el-button>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
+                                </el-col>
+
+                                <el-col :md="9">
+                                    <el-row class="new-line" style="margin-top: 55px;">
+                                        <img style="margin-top:5px;" src="public/images/trophyne.png">
+                                        <div v-bind:style="renderColorBorder(feedbackSum.averageScore)">
+                                            <div v-bind:style="renderColorText(feedbackSum.averageScore)">{{feedbackSum.averageScore}}</div>
+                                            <div class="slash">/</div>
+                                            <div class="max-score">{{feedbackSum.totalScore}}</div>
+                                        </div>
+                                    </el-row>
+                                </el-col>
+                            </div>
+
+                            <div v-else>
+                                <div class="score-feature-head">
+                                    <span class="text">Property Score</span>
+                                </div>
+                                <div class="no-score">No score yet.</div>
+                                <div class="no-score">You will see your score here based on feedback given by buyers and agents.</div>
+                            </div>
+                        </el-row>
+
+                        <el-row>
+                            <el-col :md="24">
+                                <div>Neighbourhood</div>
+                            </el-col>
+                            <el-col :md="24">
+                                <PropertiesMap :map-data="details" :markers="mapMarkers"
+                                                :map-config="mapConfig">
+                                </PropertiesMap>
+                            </el-col>
+                        </el-row>
+                    </el-col>
                 </el-row>
             </div>
+
+            <!-- Property Configuration -->
+            <!--   close-on-click-modal : click out of dialog         -->
+            <el-dialog :visible="isDialogEditPopup" :fullscreen="true" class="form-edit" :close-on-click-modal="true">
+                <SaveProperties :list-id="details.listingId" :IsEdit="true" @IsClose="CloseEdit">
+                </SaveProperties>
+            </el-dialog>
         </div>
     </div>
 </template>
@@ -231,10 +330,21 @@
     import {mapGetters} from 'vuex';
 
     import helper from '../helpers/index';
-    import {FETCH_PROPERTY_DETAIL, ADD_TO_CART, REMOVE_FROM_CART} from "../store/actions.type";
+    import {
+        FETCH_PROPERTY_DETAIL,
+        ADD_TO_CART,
+        REMOVE_FROM_CART,
+        FETCH_SUMMARY_SCORE
+    } from "../store/actions.type";
+    import PropertiesMap from "../components/Map/PropertiesMap";
+    import SaveProperties from "../components/PropertyDetail/SaveProperties";
 
     export default {
         name: "PropertiesDetail",
+        components: {
+            PropertiesMap,
+            SaveProperties
+        },
         data() {
             return {
                 propId: null,
@@ -246,25 +356,49 @@
                 noteHead: '',
                 notesList: [],
                 historyList:[],
+                feedbackSum: {},
 
                 mapMarkers: [],
                 mapConfig: {zoom: 14, center: {lat:13.7394935, lng:100.5643137}},
+
+                isDialogEditPopup: false
             }
         },
         computed: {
-            ...mapGetters(['isDetailLoading', 'details', 'getBookingList'])
-
+            ...mapGetters([
+                'isDetailLoading',
+                'details',
+                'getBookingList'
+            ])
         },
         mounted() {
             this.loadPropertyDetailPage();
-            let _listBooking = this.getBookingList;
-            let isExist = _listBooking.findIndex(p => p.listingId === this.$route.query.propId);
-            this.isBooked = (isExist !== -1) ? true : false;
         },
 
         methods: {
             async loadPropertyDetailPage() {
                 await this.getPropertyDetails();
+                this.mapMarkers = [];
+
+                let _listBooking = this.getBookingList;
+
+                let listingId = this.$route.query.propId;
+                let isExist = _listBooking.findIndex(p => p.listingId === listingId);
+                this.isBooked = (isExist !== -1) ? true : false;
+
+                // homeOwnerDetail
+                if (this.details.homeOwnerInfo) {
+                    this.homeownerDetail = this.details.homeOwnerInfo.details;
+                    this.notesList = this.details.homeOwnerInfo.notes;
+                    this.noteHead = "Notes ("+this.notesList.length+")";
+                    this.historyList = this.details.homeOwnerInfo.history;
+                }
+                // feedback
+                this.getSummaryScore(listingId);
+            },
+
+            getSummaryScore(listingId) {
+                this.$store.dispatch(FETCH_SUMMARY_SCORE, listingId);
             },
 
             getPropertyDetails() {
@@ -279,6 +413,7 @@
                     };
 
                     this.mapMarkers.push(position);
+                    this.mapConfig = {zoom: 14, center: position};
                     this.isPublish = this.details.makeLive === '1' ? 'Published' : 'Unpublished';
                 }
             },
@@ -309,6 +444,78 @@
                 console.log('a', e);
             },
 
+            // Feedback
+            renderColorItem(score, index) {
+                let _color = '#dadada';
+                if (score === 0 || index > score) {
+                    _color = '#dadada';
+                } else if (score > 0 && score <=2) {
+                    _color = '#ffb042';
+                } else if (score === 3) {
+                    _color = '#48c5e8';
+                } else if (score > 3) {
+                    _color = '#26d1bd';
+                }
+
+                let customStyle = {
+                    'width': '14px' ,'height': '14px',
+                    'borderRadius': '100px', 'backgroundColor' : _color,
+                    'margin-top': '5px', 'margin-right': '3px', 'display': 'inline-block'
+                }
+                return customStyle;
+            },
+
+            renderColorBorder(score) {
+                let _color = '#dadada';
+                if (score == 0){
+                    _color = '#dadada'
+                } else if (score > 0 && score <=20) {
+                    _color = '#ffb042'
+                } else if (score == 21) {
+                    _color = '#48c5e8'
+                } else if (score > 21) {
+                    _color = '#26d1bd'
+                }
+                let _customStyle =  { 'width': '162px',
+                    'height': '162px',
+                    'border-style': 'solid',
+                    'border-width': '2px',
+                    'border-color': _color,
+                    'position': 'absolute',
+                    'left': '14%',
+                    'top': '-8px',
+                    'background-color': '#fff',
+                    'border-radius': '100px'}
+
+                return _customStyle;
+            },
+
+            renderColorText(score) {
+                let _color = '#dadada'
+
+                if (score == 0){
+                    _color = '#dadada'
+                } else if (score > 0 && score <=20) {
+                    _color = '#ffb042'
+                } else if (score == 21) {
+                    _color = '#48c5e8'
+                } else if (score > 21) {
+                    _color = '#26d1bd'
+                }
+
+                let _customStyle =  { 'font-family': 'Josefin Sans',
+                    'text-align': 'center',
+                    'font-size': '40px',
+                    'right': '50%',
+                    'top': '25%',
+                    'position': 'absolute',
+                    'color': _color}
+
+                return _customStyle;
+            },
+
+            // Map
+
 
             // set Format Date
             setFormatDate(date, format, hasTime) {
@@ -325,6 +532,10 @@
                 } else {
                     return '-';
                 }
+            },
+
+            CloseEdit() {
+
             }
         }
 
@@ -335,3 +546,23 @@
     @import "src/assets/scss/properties-detail.scss";
 
 </style>
+
+
+<!--
+homeOwnerDetail: {
+    firstName,
+    lastName,
+    email,
+    numberOfProperties,
+    phone,
+    mobile
+}
+
+feedbackSum = {
+    summaryList: [
+        question,
+
+    ]
+}
+
+-->
